@@ -821,6 +821,117 @@ body {
 }
 
 /* =============================================
+   TRAININGS SECTION
+   ============================================= */
+
+.trainings {
+    background-color: #f5f7fa;
+    padding: 80px 0;
+}
+
+.trainings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.training-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.training-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.training-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.training-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.training-card:hover .training-image img {
+    transform: scale(1.05);
+}
+
+.training-content {
+    padding: 25px;
+}
+
+.training-content h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #1a202c;
+}
+
+.training-details {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+.training-info {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f1f5f9;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.training-partners {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.partner {
+    flex-basis: 150px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.partner:hover {
+    opacity: 1;
+}
+
+.partner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments for training section */
+@media (max-width: 768px) {
+    .trainings-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .training-image {
+        height: 180px;
+    }
+}
+
+/* =============================================
    FOOTER STYLES
    ============================================= */
 
