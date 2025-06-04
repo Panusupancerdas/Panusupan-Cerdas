@@ -1,9 +1,49 @@
-
 // =============================================
 // NAVIGATION AND SCROLL EFFECTS
 // =============================================
 
 document.addEventListener('DOMContentLoaded', function() {
+    // =============================================
+    // TEXT-TO-SPEECH FUNCTIONALITY
+    // =============================================
+    
+    // Welcome message on page load
+    function playWelcomeMessage() {
+        const welcomeText = "Selamat Datang di Panusupan Cerdas, Kami siap membantu anda untuk menemukan lowongan pekerjaan, pelatihan gratis dan informasi beasiswa perguruan tinggi untuk membantu anak desa panusupan meraih mimpi yang cemerlang dimulai dari sini";
+        
+        if ('speechSynthesis' in window) {
+            const utterance = new SpeechSynthesisUtterance(welcomeText);
+            utterance.lang = 'id-ID';
+            utterance.rate = 0.9;
+            utterance.pitch = 1;
+            utterance.volume = 0.8;
+            
+            // Add a small delay to ensure page is fully loaded
+            setTimeout(() => {
+                speechSynthesis.speak(utterance);
+            }, 1000);
+        }
+    }
+
+    // Navigation click audio feedback
+    function playNavigationAudio(menuText) {
+        if ('speechSynthesis' in window) {
+            // Cancel any ongoing speech
+            speechSynthesis.cancel();
+            
+            const utterance = new SpeechSynthesisUtterance(`Membuka ${menuText}`);
+            utterance.lang = 'id-ID';
+            utterance.rate = 1.2;
+            utterance.pitch = 1.1;
+            utterance.volume = 0.7;
+            
+            speechSynthesis.speak(utterance);
+        }
+    }
+
+    // Play welcome message when page loads
+    playWelcomeMessage();
+
     // Mobile Navigation Toggle
     const mobileMenu = document.getElementById('mobile-menu');
     const navMenu = document.getElementById('nav-menu');
@@ -17,6 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
+            // Play audio for navigation
+            const menuText = this.textContent.trim();
+            playNavigationAudio(menuText);
+            
             mobileMenu.classList.remove('active');
             navMenu.classList.remove('active');
         });
