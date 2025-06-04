@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -90,15 +90,54 @@
                     dan akses pendidikan tinggi untuk masa depan yang lebih cerah.
                 </p>
                 <div class="hero-buttons fade-in-delay-3">
-                    <a href="#tentang" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+                    <a href="#tentang-program" class="btn btn-primary">Pelajari Lebih Lanjut</a>
                     <a href="#kontak" class="btn btn-secondary">Hubungi Kami</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Berita Terbaru Section -->
+    <section id="berita-terbaru" class="news">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Berita Terbaru</h2>
+                <p class="section-subtitle">Informasi Terkini Seputar Program dan Kegiatan</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Berita 1">
+                    <div class="news-content">
+                        <span class="news-date">1 Juni 2025</span>
+                        <h3>Program Beasiswa KIP-Kuliah 2025 Telah Dibuka</h3>
+                        <p>Pemerintah membuka pendaftaran beasiswa KIP-Kuliah untuk mahasiswa berprestasi dari keluarga kurang mampu...</p>
+                        <a href="#" class="news-link">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Berita 2">
+                    <div class="news-content">
+                        <span class="news-date">28 Mei 2025</span>
+                        <h3>Workshop Persiapan UTBK 2025 Sukses Digelar</h3>
+                        <p>Sebanyak 50 siswa desa Panusupan mengikuti workshop persiapan UTBK yang diselenggarakan di Balai Desa...</p>
+                        <a href="#" class="news-link">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Berita 3">
+                    <div class="news-content">
+                        <span class="news-date">25 Mei 2025</span>
+                        <h3>Lulusan Desa Panusupan Diterima di PTN Favorit</h3>
+                        <p>Kabar gembira datang dari 3 lulusan SMA asal Desa Panusupan yang berhasil diterima di Universitas Indonesia...</p>
+                        <a href="#" class="news-link">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
-    <section id="tentang" class="about">
+    <section id="tentang-program" class="about">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Tentang Program</h2>
@@ -132,93 +171,12 @@
         </div>
     </section>
 
-    <!-- Activities Section -->
-    <section id="kegiatan" class="activities">
+    <!-- Cerita Sukses Section -->
+    <section id="cerita-sukses" class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Kegiatan Program</h2>
-                <p class="section-subtitle">Berbagai Aktivitas Edukatif dan Bimbingan Karir</p>
-            </div>
-            
-            <!-- Activity Cards -->
-            <div class="activities-grid">
-                <div class="activity-card">
-                    <div class="activity-icon">📚</div>
-                    <h3>Workshop Pemilihan Jurusan</h3>
-                    <p>Sesi bimbingan untuk membantu siswa desa panusupan memilih jurusan yang sesuai dengan minat dan bakat.</p>
-                </div>
-                <div class="activity-card">
-                    <div class="activity-icon">💼</div>
-                    <h3>Seminar Karir</h3>
-                    <p>Presentasi dari profesional asal desa panusupan yang sudah sukses berbagai bidang untuk memberikan gambaran dunia kerja.</p>
-                </div>
-                <div class="activity-card">
-                    <div class="activity-icon">🎓</div>
-                    <h3>Bimbingan UTBK</h3>
-                    <p>Persiapan intensif untuk menghadapi Ujian Tulis Berbasis Komputer.</p>
-                </div>
-                <div class="activity-card">
-                    <div class="activity-icon">💰</div>
-                    <h3>Info Beasiswa</h3>
-                    <p>Panduan lengkap tentang berbagai program beasiswa nasional dan internasional yang tersedia.</p>
-                </div>
-            </div>
-
-            <!-- Schedule -->
-            <div class="schedule">
-                <h3>Jadwal Kegiatan Mendatang</h3>
-                <div class="schedule-grid">
-                    <div class="schedule-item">
-                        <div class="schedule-date">15 Juli 2025</div>
-                        <div class="schedule-content">
-                            <h4>Workshop Pemilihan Jurusan</h4>
-                            <p>09:00 - 12:00 WIB | Balai Desa Panusupan</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-date">22 Juli 2025</div>
-                        <div class="schedule-content">
-                            <h4>Seminar Karir IT</h4>
-                            <p>13:00 - 16:00 WIB | Balai Desa Panusupan</p>
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="schedule-date">29 Juli 2025</div>
-                        <div class="schedule-content">
-                            <h4>Bimbingan UTBK Batch 1</h4>
-                            <p>08:00 - 17:00 WIB | Balai Desa Panusupan</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery -->
-            <div class="gallery">
-                <h3>Galeri Kegiatan</h3>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Workshop kegiatan">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Seminar">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Bimbingan belajar">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Diskusi grup">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimoni" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Testimoni</h2>
-                <p class="section-subtitle">Cerita Sukses Peserta dan Relawan</p>
+                <h2 class="section-title">Cerita Sukses</h2>
+                <p class="section-subtitle">Inspirasi dari Alumni dan Peserta Program</p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
@@ -256,6 +214,239 @@
                             <p>Penerima Beasiswa KIP-Kuliah 2022</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edukasi Karir Section -->
+    <section id="edukasi-karir" class="activities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Edukasi Karir</h2>
+                <p class="section-subtitle">Program Bimbingan dan Pengembangan Karir</p>
+            </div>
+            
+            <!-- Activity Cards -->
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">📚</div>
+                    <h3>Workshop Pemilihan Jurusan</h3>
+                    <p>Sesi bimbingan untuk membantu siswa desa panusupan memilih jurusan yang sesuai dengan minat dan bakat.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">💼</div>
+                    <h3>Seminar Karir</h3>
+                    <p>Presentasi dari profesional asal desa panusupan yang sudah sukses berbagai bidang untuk memberikan gambaran dunia kerja.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">🎓</div>
+                    <h3>Bimbingan UTBK</h3>
+                    <p>Persiapan intensif untuk menghadapi Ujian Tulis Berbasis Komputer.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">🎯</div>
+                    <h3>Konsultasi Karir</h3>
+                    <p>Sesi konsultasi individual untuk perencanaan karir dan pengembangan diri.</p>
+                </div>
+            </div>
+
+            <!-- Schedule -->
+            <div class="schedule">
+                <h3>Jadwal Kegiatan Mendatang</h3>
+                <div class="schedule-grid">
+                    <div class="schedule-item">
+                        <div class="schedule-date">15 Juli 2025</div>
+                        <div class="schedule-content">
+                            <h4>Workshop Pemilihan Jurusan</h4>
+                            <p>09:00 - 12:00 WIB | Balai Desa Panusupan</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-date">22 Juli 2025</div>
+                        <div class="schedule-content">
+                            <h4>Seminar Karir IT</h4>
+                            <p>13:00 - 16:00 WIB | Balai Desa Panusupan</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-date">29 Juli 2025</div>
+                        <div class="schedule-content">
+                            <h4>Bimbingan UTBK Batch 1</h4>
+                            <p>08:00 - 17:00 WIB | Balai Desa Panusupan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loker Indonesia Section -->
+    <section id="loker-indonesia" class="jobs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lowongan Kerja Indonesia</h2>
+                <p class="section-subtitle">Informasi Lowongan Kerja Terbaru di Seluruh Indonesia</p>
+            </div>
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-company">PT Pertamina Hulu Energi</div>
+                    <h3>Fresh Graduate Program - Engineering</h3>
+                    <div class="job-details">
+                        <span class="job-location">📍 Jakarta</span>
+                        <span class="job-type">💼 Full Time</span>
+                        <span class="job-salary">💰 8-12 Juta</span>
+                    </div>
+                    <p>Program khusus untuk fresh graduate dari berbagai jurusan teknik. Pelatihan intensif dan career development...</p>
+                    <div class="job-requirements">
+                        <strong>Requirements:</strong> S1 Teknik, IPK min 3.00, Bahasa Inggris aktif
+                    </div>
+                    <div class="job-deadline">Deadline: 30 Juni 2025</div>
+                    <a href="#" class="btn btn-primary">Lamar Sekarang</a>
+                </div>
+                <div class="job-card">
+                    <div class="job-company">Bank BRI</div>
+                    <h3>Officer Development Program</h3>
+                    <div class="job-details">
+                        <span class="job-location">📍 Seluruh Indonesia</span>
+                        <span class="job-type">💼 Full Time</span>
+                        <span class="job-salary">💰 6-10 Juta</span>
+                    </div>
+                    <p>Program pengembangan officer untuk fresh graduate dengan training comprehensive selama 1 tahun...</p>
+                    <div class="job-requirements">
+                        <strong>Requirements:</strong> S1 semua jurusan, IPK min 2.75, bersedia ditempatkan
+                    </div>
+                    <div class="job-deadline">Deadline: 15 Juli 2025</div>
+                    <a href="#" class="btn btn-primary">Lamar Sekarang</a>
+                </div>
+                <div class="job-card">
+                    <div class="job-company">Gojek Indonesia</div>
+                    <h3>Software Engineer - Backend</h3>
+                    <div class="job-details">
+                        <span class="job-location">📍 Jakarta</span>
+                        <span class="job-type">💼 Full Time</span>
+                        <span class="job-salary">💰 12-18 Juta</span>
+                    </div>
+                    <p>Bergabung dengan tim engineering Gojek untuk mengembangkan platform yang digunakan jutaan pengguna...</p>
+                    <div class="job-requirements">
+                        <strong>Requirements:</strong> S1 Informatika/Sistem Informasi, pengalaman programming
+                    </div>
+                    <div class="job-deadline">Deadline: 20 Juli 2025</div>
+                    <a href="#" class="btn btn-primary">Lamar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loker Desa Section -->
+    <section id="loker-desa" class="local-jobs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lowongan Kerja Desa</h2>
+                <p class="section-subtitle">Peluang Kerja dan Usaha di Sekitar Desa Panusupan</p>
+            </div>
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-company">Kelompok Tani Makmur</div>
+                    <h3>Coordinator Pertanian Modern</h3>
+                    <div class="job-details">
+                        <span class="job-location">📍 Desa Panusupan</span>
+                        <span class="job-type">💼 Full Time</span>
+                        <span class="job-salary">💰 4-6 Juta</span>
+                    </div>
+                    <p>Mengkoordinir program pertanian modern dan organic farming di wilayah desa Panusupan...</p>
+                    <div class="job-requirements">
+                        <strong>Requirements:</strong> S1 Pertanian/Agribisnis, pengalaman di bidang pertanian
+                    </div>
+                    <div class="job-deadline">Deadline: 10 Juli 2025</div>
+                    <a href="#" class="btn btn-primary">Lamar Sekarang</a>
+                </div>
+                <div class="job-card">
+                    <div class="job-company">BUMDes Panusupan Sejahtera</div>
+                    <h3>Staff Admin & Marketing</h3>
+                    <div class="job-details">
+                        <span class="job-location">📍 Desa Panusupan</span>
+                        <span class="job-type">💼 Full Time</span>
+                        <span class="job-salary">💰 3-5 Juta</span>
+                    </div>
+                    <p>Mengelola administrasi dan pemasaran produk-produk unggulan desa, termasuk digital marketing...</p>
+                    <div class="job-requirements">
+                        <strong>Requirements:</strong> SMA/D3/S1, mahir komputer, kreatif dalam marketing
+                    </div>
+                    <div class="job-deadline">Deadline: 25 Juni 2025</div>
+                    <a href="#" class="btn btn-primary">Lamar Sekarang</a>
+                </div>
+                <div class="job-card">
+                    <div class="job-company">Koperasi Simpan Pinjam Mandiri</div>
+                    <h3>Teller & Customer Service</h3>
+                    <div class="job-details">
+                        <span class="job-location">📍 Cilongok</span>
+                        <span class="job-type">💼 Full Time</span>
+                        <span class="job-salary">💰 2.5-4 Juta</span>
+                    </div>
+                    <p>Melayani nasabah koperasi dalam transaksi keuangan dan memberikan informasi produk simpan pinjam...</p>
+                    <div class="job-requirements">
+                        <strong>Requirements:</strong> SMA/D3, jujur, teliti, komunikatif
+                    </div>
+                    <div class="job-deadline">Deadline: 5 Juli 2025</div>
+                    <a href="#" class="btn btn-primary">Lamar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beasiswa Section -->
+    <section id="beasiswa" class="scholarships">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Informasi Beasiswa</h2>
+                <p class="section-subtitle">Peluang Beasiswa untuk Melanjutkan Pendidikan</p>
+            </div>
+            <div class="scholarships-grid">
+                <div class="scholarship-card">
+                    <div class="scholarship-provider">Kementerian Pendidikan</div>
+                    <h3>KIP-Kuliah 2025</h3>
+                    <div class="scholarship-details">
+                        <span class="scholarship-level">🎓 S1</span>
+                        <span class="scholarship-coverage">💰 Penuh</span>
+                        <span class="scholarship-duration">⏰ 4 Tahun</span>
+                    </div>
+                    <p>Beasiswa penuh untuk mahasiswa dari keluarga kurang mampu berprestasi, meliputi biaya kuliah, uang saku, dan biaya hidup...</p>
+                    <div class="scholarship-requirements">
+                        <strong>Syarat:</strong> Lulusan SMA, tidak mampu secara ekonomi, prestasi akademik baik
+                    </div>
+                    <div class="scholarship-deadline">Deadline: 31 Oktober 2025</div>
+                    <a href="#" class="btn btn-primary">Daftar Sekarang</a>
+                </div>
+                <div class="scholarship-card">
+                    <div class="scholarship-provider">LPDP</div>
+                    <h3>Beasiswa Indonesia Maju</h3>
+                    <div class="scholarship-details">
+                        <span class="scholarship-level">🎓 S2/S3</span>
+                        <span class="scholarship-coverage">💰 Penuh</span>
+                        <span class="scholarship-duration">⏰ 2-4 Tahun</span>
+                    </div>
+                    <p>Program beasiswa untuk studi master dan doktor di dalam maupun luar negeri dengan fokus pada prioritas pembangunan nasional...</p>
+                    <div class="scholarship-requirements">
+                        <strong>Syarat:</strong> WNI, S1/S2 dengan IPK min 3.25, pengalaman organisasi
+                    </div>
+                    <div class="scholarship-deadline">Deadline: 15 September 2025</div>
+                    <a href="#" class="btn btn-primary">Daftar Sekarang</a>
+                </div>
+                <div class="scholarship-card">
+                    <div class="scholarship-provider">Universitas Indonesia</div>
+                    <h3>Beasiswa Prestasi UI</h3>
+                    <div class="scholarship-details">
+                        <span class="scholarship-level">🎓 S1</span>
+                        <span class="scholarship-coverage">💰 Parsial</span>
+                        <span class="scholarship-duration">⏰ 1 Tahun</span>
+                    </div>
+                    <p>Beasiswa merit untuk mahasiswa berprestasi di Universitas Indonesia dengan potongan biaya kuliah hingga 75%...</p>
+                    <div class="scholarship-requirements">
+                        <strong>Syarat:</strong> Mahasiswa UI, IPK min 3.50, aktif organisasi, tidak sedang menerima beasiswa lain
+                    </div>
+                    <div class="scholarship-deadline">Deadline: 30 Agustus 2025</div>
+                    <a href="#" class="btn btn-primary">Daftar Sekarang</a>
                 </div>
             </div>
         </div>
@@ -322,6 +513,8 @@
                                 <option value="info">Informasi Program</option>
                                 <option value="daftar">Pendaftaran</option>
                                 <option value="volunteer">Menjadi Relawan</option>
+                                <option value="beasiswa">Konsultasi Beasiswa</option>
+                                <option value="loker">Informasi Lowongan</option>
                                 <option value="lainnya">Lainnya</option>
                             </select>
                         </div>
@@ -347,9 +540,19 @@
                 <div class="footer-section">
                     <h4>Program</h4>
                     <ul>
-                        <li><a href="#tentang">Tentang Program</a></li>
-                        <li><a href="#kegiatan">Kegiatan</a></li>
-                        <li><a href="#testimoni">Testimoni</a></li>
+                        <li><a href="#tentang-program">Tentang Program</a></li>
+                        <li><a href="#edukasi-karir">Edukasi Karir</a></li>
+                        <li><a href="#cerita-sukses">Cerita Sukses</a></li>
+                        <li><a href="#beasiswa">Beasiswa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#loker-indonesia">Loker Indonesia</a></li>
+                        <li><a href="#loker-desa">Loker Desa</a></li>
+                        <li><a href="#berita-terbaru">Berita Terbaru</a></li>
+                        <li><a href="#kontak">Hubungi Kami</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
